@@ -48,3 +48,7 @@ CLUSTER > BASE DE DATOS > COLECCIÓN > DOCUMENTOS
 
 ## PRIMEROS PASOS
 
+### ¿Cómo entrar a MongoDB?
+
+* Abrir la terminal
+`$ mongod`
