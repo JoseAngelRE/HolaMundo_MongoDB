@@ -90,15 +90,15 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 + Buscar dentro de las colecciones
 
-* Forma normal
+  * Forma normal
 
 `> db.mercancia.find()`
 
-* Forma ordenada
+  * Forma ordenada
 
 `> db.mercancia.find().pretty()`
 
-* Buscar por algun atributo específico
+  * Buscar por algun atributo específico
 
 `> db.mercancia.find({"nombre:" "escoba"}).pretty()`
 
@@ -108,25 +108,25 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 + Actualizar documentos
 
-* Actualizando todo el documento por otro
+  * Actualizando todo el documento por otro
 
 `> db.mercancia.update({"nombre:" "pala"}, {"fabricante:" "truper"})`
 
-* Actualizando el documento sin eliminar los demas datos
+  * Actualizando el documento sin eliminar los demas datos
 
 `> db.mercancia.update({"nombre:" "escoba"}, {$set: {"fabricante:" "truper"}})`
 
 + Eliminar 
 
-* Eliminar documentos
+  * Eliminar documentos
 
 `> db.mercancia.remove({"nombre:" "escoba"})`
 
-* Eliminar coleccion
+  * Eliminar coleccion
 
 `> db.mercancia.drop()`
 
-* Eliminar base de datos
+  * Eliminar base de datos
 
 `> db.dropDatabase()`
  
