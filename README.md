@@ -52,6 +52,8 @@ CLUSTER > BASE DE DATOS > COLECCIÓN > DOCUMENTOS
 
 ## PRIMEROS PASOS
 
+Como ejemplo en todo el curso haremos una representación de una ferretería.
+
 ### ¿Cómo entrar a MongoDB?
 
 + Abrir la terminal para iniciar el servidor:
