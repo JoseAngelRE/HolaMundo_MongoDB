@@ -46,7 +46,7 @@ Contenedores de colecciones.
 
 Contiene las bases de datos.
 
-De forma un poco mas gráfica podriamos verlo de la siguiente manera:
+De forma un poco mas gráfica podríamos verlo de la siguiente manera:
 
 CLUSTER > BASE DE DATOS > COLECCIÓN > DOCUMENTOS
 
@@ -68,79 +68,79 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 ### Insertar
 
-+ Ver las bases de datos
++ Ver las bases de datos.
 
 `> show dbs`
 
-+ Base de datos actual
++ Base de datos actual.
 
 `> db`
 
-+ Hacer una nueva base de datos
++ Hacer una nueva base de datos.
 
 `> use ferreteria`
 
-+ Insertar una coleccion
++ Insertar una colección.
 
 `> db.createCollection("mercancia")`
 
-+ Mostrar las colecciones
++ Mostrar las colecciones.
 
 `> show collections`
 
-+ Insertar un documento a una colección
++ Insertar un documento a una colección.
 
 `> db.mercancia.insert({"nombre:" "escoba", "precio:" 150})`
 
-+ Insertar varios documentos a una coleccion
++ Insertar varios documentos a una coleccion.
 
 `> db.mercancia.insert([{"nombre:" "escoba", "precio:" 150},{"nombre:" "pala", "precio:" 200}])`
 
 ### Buscar dentro de las colecciones
 
-  * Forma normal
+* Forma normal.
 
 `> db.mercancia.find()`
 
-* Forma ordenada
+* Forma ordenada.
 
 `> db.mercancia.find().pretty()`
 
-* Buscar por algun atributo específico
+* Buscar por algun atributo específico.
 
 `> db.mercancia.find({"nombre:" "escoba"}).pretty()`
 
-+ Contar los documentos que hay dentro de alguna coleccion
++ Contar los documentos que hay dentro de alguna coleccion.
 
 `> db.mercancia.count()`
 
 ### Actualizar documentos
 
-* Actualizando todo el documento por otro
+* Actualizando todo el documento por otro.
 
 `> db.mercancia.update({"nombre:" "pala"}, {"fabricante:" "truper"})`
 
-* Actualizando el documento sin eliminar los demas datos
+* Actualizando el documento sin eliminar los demás datos.
 
 `> db.mercancia.update({"nombre:" "escoba"}, {$set: {"fabricante:" "truper"}})`
 
 ### Eliminar 
 
-* Eliminar documentos
+* Eliminar documentos.
 
 `> db.mercancia.remove({"nombre:" "escoba"})`
 
-* Eliminar coleccion
+* Eliminar colección.
 
 `> db.mercancia.drop()`
 
-* Eliminar base de datos
+* Eliminar base de datos.
 
 `> db.dropDatabase()`
  
 ### Cerrar MongoDB
 
-* Cerrar la terminal en la que trabajamos
+* Cerrar la terminal en la que trabajamos.
 
 `> exit`
 
