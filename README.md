@@ -146,7 +146,7 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 Ahora ya se puede cerrar la ventana.
 
-En la otra terminal nos aparece que se cerró una conexión. Basta con teclear "Control C" y estará todo terminado.
+En la otra terminal nos aparecerá que se cerró la conexión. Basta con teclear "Control C" y estará todo terminado.
 
 
 
