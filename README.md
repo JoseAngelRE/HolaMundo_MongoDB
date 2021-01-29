@@ -50,83 +50,83 @@ CLUSTER > BASE DE DATOS > COLECCIÓN > DOCUMENTOS
 
 ### ¿Cómo entrar a MongoDB?
 
-* Abrir la terminal para iniciar el servidor:
++ Abrir la terminal para iniciar el servidor:
 
 `> mongod`
 
-* Dejemos abierta la anterior y abriremos una nueva:
++ Dejemos abierta la anterior y abriremos una nueva:
 
 `> mongo`
 
 Desde esta segunda terminal abierta haremos todo lo demás.
 
-* Ver las bases de datos
++ Ver las bases de datos
 
 `> show dbs`
 
-* Base de datos actual
++ Base de datos actual
 
 `> db`
 
-* Hacer una nueva base de datos
++ Hacer una nueva base de datos
 
 `> use ferreteria`
 
-* Insertar una coleccion
++ Insertar una coleccion
 
 `> db.createCollection("mercancia")`
 
-* Mostrar las colecciones
++ Mostrar las colecciones
 
 `> show collections`
 
-* Insertar un documento a una colección
++ Insertar un documento a una colección
 
 `> db.mercancia.insert({"nombre:" "escoba", "precio:" 150})`
 
-* Insertar varios documentos a una coleccion
++ Insertar varios documentos a una coleccion
 
 `> db.mercancia.insert([{"nombre:" "escoba", "precio:" 150},{"nombre:" "pala", "precio:" 200}])`
 
-* Buscar dentro de las colecciones
++ Buscar dentro de las colecciones
 
-** Forma normal
+* Forma normal
 
 `> db.mercancia.find()`
 
-** Forma ordenada
+* Forma ordenada
 
 `> db.mercancia.find().pretty()`
 
-** Buscar por algun atributo específico
+* Buscar por algun atributo específico
 
 `> db.mercancia.find({"nombre:" "escoba"}).pretty()`
 
-* Contar los documentos que hay dentro de alguna coleccion
++ Contar los documentos que hay dentro de alguna coleccion
 
 `> db.mercancia.count()`
 
-* Actualizar documentos
++ Actualizar documentos
 
-** Actualizando todo el documento por otro
+* Actualizando todo el documento por otro
 
 `> db.mercancia.update({"nombre:" "pala"}, {"fabricante:" "truper"})`
 
-** Actualizando el documento sin eliminar los demas datos
+* Actualizando el documento sin eliminar los demas datos
 
 `> db.mercancia.update({"nombre:" "escoba"}, {$set: {"fabricante:" "truper"}})`
 
-* Eliminar 
++ Eliminar 
 
-** Eliminar documentos
+* Eliminar documentos
 
 `> db.mercancia.remove({"nombre:" "escoba"})`
 
-** Eliminar coleccion
+* Eliminar coleccion
 
 `> db.mercancia.drop()`
 
-** Eliminar base de datos
+* Eliminar base de datos
 
 `> db.dropDatabase()`
  
