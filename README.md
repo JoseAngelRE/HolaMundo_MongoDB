@@ -60,6 +60,8 @@ CLUSTER > BASE DE DATOS > COLECCIÓN > DOCUMENTOS
 
 Desde esta segunda terminal abierta haremos todo lo demás.
 
+### Insertar
+
 + Ver las bases de datos
 
 `> show dbs`
@@ -88,17 +90,17 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 `> db.mercancia.insert([{"nombre:" "escoba", "precio:" 150},{"nombre:" "pala", "precio:" 200}])`
 
-+ Buscar dentro de las colecciones
+### Buscar dentro de las colecciones
 
   * Forma normal
 
 `> db.mercancia.find()`
 
-  * Forma ordenada
+* Forma ordenada
 
 `> db.mercancia.find().pretty()`
 
-  * Buscar por algun atributo específico
+* Buscar por algun atributo específico
 
 `> db.mercancia.find({"nombre:" "escoba"}).pretty()`
 
@@ -106,27 +108,27 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 `> db.mercancia.count()`
 
-+ Actualizar documentos
+### Actualizar documentos
 
-  * Actualizando todo el documento por otro
+* Actualizando todo el documento por otro
 
 `> db.mercancia.update({"nombre:" "pala"}, {"fabricante:" "truper"})`
 
-  * Actualizando el documento sin eliminar los demas datos
+* Actualizando el documento sin eliminar los demas datos
 
 `> db.mercancia.update({"nombre:" "escoba"}, {$set: {"fabricante:" "truper"}})`
 
-+ Eliminar 
+### Eliminar 
 
-  * Eliminar documentos
+* Eliminar documentos
 
 `> db.mercancia.remove({"nombre:" "escoba"})`
 
-  * Eliminar coleccion
+* Eliminar coleccion
 
 `> db.mercancia.drop()`
 
-  * Eliminar base de datos
+* Eliminar base de datos
 
 `> db.dropDatabase()`
  
