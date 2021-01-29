@@ -1,8 +1,9 @@
 # "HOLA MUNDO" en MongoDB
 Curso básico de MongoDB
 
-Video: https://youtu.be/RDdiUHZECUE
-Presentación: https://www.canva.com/design/DAES90LgnCs/tcmB6hPufHJ7355THFXxlQ/view?utm_content=DAES90LgnCs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+[VIDEO](https://youtu.be/RDdiUHZECUE)
+
+[PRESENTACION](https://www.canva.com/design/DAES90LgnCs/tcmB6hPufHJ7355THFXxlQ/view?utm_content=DAES90LgnCs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ## PUNTOS PRINCIPALES
 
