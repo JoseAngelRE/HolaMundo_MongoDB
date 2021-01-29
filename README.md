@@ -66,7 +66,7 @@ Como ejemplo en todo el curso haremos una representación de una ferretería.
 
 Desde esta segunda terminal abierta haremos todo lo demás.
 
-### Insertar
+## Insertar
 
 + Ver las bases de datos.
 
@@ -96,7 +96,7 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 `> db.mercancia.insert([{"nombre:" "escoba", "precio:" 150},{"nombre:" "pala", "precio:" 200}])`
 
-### Buscar dentro de las colecciones
+## Buscar dentro de las colecciones
 
 * Forma normal.
 
@@ -114,7 +114,7 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 `> db.mercancia.count()`
 
-### Actualizar documentos
+## Actualizar
 
 * Actualizando todo el documento por otro.
 
@@ -124,7 +124,7 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 `> db.mercancia.update({"nombre:" "escoba"}, {$set: {"fabricante:" "truper"}})`
 
-### Eliminar 
+## Eliminar 
 
 * Eliminar documentos.
 
@@ -138,7 +138,7 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 `> db.dropDatabase()`
  
-### Cerrar MongoDB
+## Cerrar MongoDB
 
 * Cerrar la terminal en la que trabajamos.
 
