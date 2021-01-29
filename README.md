@@ -132,6 +132,16 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 `> db.dropDatabase()`
  
+### Cerrar MongoDB
+
+* Cerrar la terminal en la que trabajamos
+
+`> exit`
+
+Ahora ya se puede cerrar la ventana.
+
+En la otra terminal nos aparece que se cerró una conexión. Basta con teclear "Control C" y estará todo terminado.
+
 
 
 
