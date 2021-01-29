@@ -50,5 +50,90 @@ CLUSTER > BASE DE DATOS > COLECCIÓN > DOCUMENTOS
 
 ### ¿Cómo entrar a MongoDB?
 
-* Abrir la terminal
-`$ mongod`
+* Abrir la terminal para iniciar el servidor:
+
+`> mongod`
+
+* Dejemos abierta la anterior y abriremos una nueva:
+
+`> mongo`
+
+Desde esta segunda terminal abierta haremos todo lo demás.
+
+* Ver las bases de datos
+
+`> show dbs`
+
+* Base de datos actual
+
+`> db`
+
+* Hacer una nueva base de datos
+
+`> use ferreteria`
+
+* Insertar una coleccion
+
+`> db.createCollection("mercancia")`
+
+* Mostrar las colecciones
+
+`> show collections`
+
+* Insertar un documento a una colección
+
+`> db.mercancia.insert({"nombre:" "escoba", "precio:" 150})`
+
+* Insertar varios documentos a una coleccion
+
+`> db.mercancia.insert([{"nombre:" "escoba", "precio:" 150},{"nombre:" "pala", "precio:" 200}])`
+
+* Buscar dentro de las colecciones
+
+** Forma normal
+
+`> db.mercancia.find()`
+
+** Forma ordenada
+
+`> db.mercancia.find().pretty()`
+
+** Buscar por algun atributo específico
+
+`> db.mercancia.find({"nombre:" "escoba"}).pretty()`
+
+* Contar los documentos que hay dentro de alguna coleccion
+
+`> db.mercancia.count()`
+
+* Actualizar documentos
+
+** Actualizando todo el documento por otro
+
+`> db.mercancia.update({"nombre:" "pala"}, {"fabricante:" "truper"})`
+
+** Actualizando el documento sin eliminar los demas datos
+
+`> db.mercancia.update({"nombre:" "escoba"}, {$set: {"fabricante:" "truper"}})`
+
+* Eliminar 
+
+** Eliminar documentos
+
+`> db.mercancia.remove({"nombre:" "escoba"})`
+
+** Eliminar coleccion
+
+`> db.mercancia.drop()`
+
+** Eliminar base de datos
+
+`> db.dropDatabase()`
+ 
+
+
+
+
+
+
+
