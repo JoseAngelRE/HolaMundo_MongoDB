@@ -90,11 +90,11 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 + Insertar un documento a una colección.
 
-`> db.mercancia.insert({"nombre:" "escoba", "precio:" 150})`
+`> db.mercancia.insert({"nombre": "escoba", "precio": 150})`
 
 + Insertar varios documentos a una coleccion.
 
-`> db.mercancia.insert([{"nombre:" "escoba", "precio:" 150},{"nombre:" "pala", "precio:" 200}])`
+`> db.mercancia.insert([{"nombre": "escoba", "precio": 150},{"nombre": "pala", "precio": 200}])`
 
 ## Buscar dentro de las colecciones
 
@@ -108,7 +108,7 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 * Buscar por algun atributo específico.
 
-`> db.mercancia.find({"nombre:" "escoba"}).pretty()`
+`> db.mercancia.find({"nombre": "escoba"}).pretty()`
 
 + Contar los documentos que hay dentro de alguna coleccion.
 
@@ -118,17 +118,17 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 * Actualizando todo el documento por otro.
 
-`> db.mercancia.update({"nombre:" "pala"}, {"fabricante:" "truper"})`
+`> db.mercancia.update({"nombre": "pala"}, {"fabricante": "truper"})`
 
 * Actualizando el documento sin eliminar los demás datos.
 
-`> db.mercancia.update({"nombre:" "escoba"}, {$set: {"fabricante:" "truper"}})`
+`> db.mercancia.update({"nombre": "escoba"}, {$set: {"fabricante": "truper"}})`
 
 ## Eliminar 
 
 * Eliminar documentos.
 
-`> db.mercancia.remove({"nombre:" "escoba"})`
+`> db.mercancia.remove({"nombre": "escoba"})`
 
 * Eliminar colección.
 
