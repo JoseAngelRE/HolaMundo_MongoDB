@@ -132,6 +132,14 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 `> db.mercancia.update({"nombre": "escoba"}, {$set: {"fabricante": "truper"}})`
 
+* Incrementar un número.
+
+`> db.mercancia.update({"nombre": "escoba"}, {$inc: {"precio": 1}})`
+
+* Incrementar un número.
+
+`> db.coleccion.update({"nombre": "escoba"}, {$rename: {"nombre": "name"}})`
+
 ## Eliminar 
 
 * Eliminar documentos.
