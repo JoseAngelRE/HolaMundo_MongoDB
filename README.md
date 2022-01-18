@@ -110,9 +110,17 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 `> db.mercancia.find({"nombre": "escoba"}).pretty()`
 
-+ Contar los documentos que hay dentro de alguna coleccion.
+* Contar los documentos que hay dentro de alguna coleccion.
 
 `> db.mercancia.count()`
+
+* Mostrar con un límite.
+
+`> db.mercancia.find({}).limit(2)`
+
+* Ordenarlo.
+
+`> db.coleccion.find({"precio": 200}).sort({nombre: 1})`
 
 ## Actualizar
 
