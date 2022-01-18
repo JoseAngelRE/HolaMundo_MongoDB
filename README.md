@@ -136,7 +136,7 @@ Desde esta segunda terminal abierta haremos todo lo demás.
 
 `> db.mercancia.update({"nombre": "escoba"}, {$inc: {"precio": 1}})`
 
-* Incrementar un número.
+* Renombrar un atributo.
 
 `> db.coleccion.update({"nombre": "escoba"}, {$rename: {"nombre": "name"}})`
 
